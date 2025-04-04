@@ -6,9 +6,17 @@ One of the RPC calls, `UmpoRpcReadProfileAlias`, only works on Windows-11 based 
 The impact is that an low privileged user is able to DoS a Windows client or server by crashing the Power service that results in an BSOD. The Power service cannot be turned off because it is a core system service responsible for managing power settings, battery status, and power policies. Windows does not allow stopping or disabling it through Services (services.msc) or via command-line tools like `sc config` or `net stop`.
 
 ## UmpoRpcReadProfileAlias
-![](/media/PoC_UmpoRpcReadProfileAlias.mov)
+
+
+https://github.com/user-attachments/assets/3cfd0516-5447-4f56-bdcd-fc155e07be4e
+
+
 
 ## UmpoRpcReadFromUserPowerKey
-![](/media/PoC_UmpoRpcReadFromUserPowerKey.mov)
+
+
+https://github.com/user-attachments/assets/b7dd0f4c-fa4f-449d-b5fb-0f395b236093
+
+
 
 For more details about these vulnerabilities, check out the blog post: https://incendium.rocks/posts/Unplugging-Power-Service/
